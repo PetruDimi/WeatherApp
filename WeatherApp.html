@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="WeatherApp.css">
+</head>
+<body>
+
+    <div class="container my-5 mx-auto">
+
+        <h1 class="text-muted text-center my-4">Ninja Weather</h1>
+
+        <form class="change-location my-4 text-center text-muted">
+            <label for="city">Enter a location for weather information</label>
+            <input type="text" name = "city" class = "form-control p-4">
+        </form>
+
+        <div class="card shadow-lg rounded d-none">
+            <!-- they will be dynamicaly injected later 
+            depending on the time, till then i'll put a 
+            placeholder img -->
+            <img src="https://via.placeholder.com/400x300" class="time card-img-top">
+
+            <div class="icon bg-light mx-auto text-center">
+                <img src=" ">
+            </div>
+
+            <div class="text-muted text-upercase text-center detail">
+                <h5 class="my-3">City name</h5>
+                <div class="my-3">Weather Condition</div>
+                <div class="display-4 my-4">
+                    <span>TEMP</span>
+                    <span>&deg;C</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="forecast.js"></script>
+    <script src="app.js"></script>
+    <!-- Moast of the text content of the tags have only a placeholder role.
+    The city name, weather condition, and degres in celsius will be dynamicaly imputed wit JS code -->
+</body>
+</html>
+
