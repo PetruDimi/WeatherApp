@@ -64,11 +64,11 @@ const updateUI = (data)=>{
     }
 
     // displaying day/night time img (with ternary operator)
-    let timeSrc = weather.IsDayTime ? 'img/day.svg' : 'img/night.svg'
+    let timeSrc = weather.IsDayTime ? './img/day.svg' : './img/night.svg'
     time.setAttribute('src', timeSrc)
 
     // displaying icon
-    let iconSrc = `img/icons/${weather.WeatherIcon}.svg`
+    let iconSrc = `./img/icons/${weather.WeatherIcon}.svg`
     icon.firstElementChild.setAttribute('src', iconSrc)
 }
 
